@@ -1,0 +1,29 @@
+
+
+<div class="container">
+  
+  <div class="row" style="padding-top: 20px;">
+    <div class="col-md-1">index</div>
+    <div class="col-md-7">Sentence</div>
+    <div class="col-md-2">Intent</div>
+    <div class="col-md-2">is_train</div>
+</div>
+      <!-- <div *ngFor="let sentence of sentences; index as i;">
+     
+       <app-doc [docData]="sentence"></app-doc>
+      </div> -->
+      <code>me</code>
+
+      <p>Select some text </p>
+      <div (mouseup)="showSelectedText()">
+      Do you think that facebook, twitter, linkedin are designed to make people addict ?, Then you have to read this article. The most popular social networking sites are following people's habit. It is not concept, it is people's habit
+      </div>
+      <br/>
+      <h3>Selected Text</h3>
+      <div>{{selectedText}}</div>
+
+      <div [innerHTML]="selectedText"></div>
+</div>
+
+
+<router-outlet></router-outlet>
